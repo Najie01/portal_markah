@@ -145,16 +145,6 @@
                             <li class="breadcrumb-item active">Borang Pemarkahan</li>
                         </ol>
                         <div class="card mb-4">
-                            <div class="card-body">
-                                <p class="mb-0">
-                                    This page is an example of using static navigation. By removing the
-                                    <code>.sb-nav-fixed</code>
-                                    class from the
-                                    <code>body</code>
-                                    , the top navigation and side navigation will become static on scroll. Scroll down this page to see an example.
-                                </p>
-                            </div>
-                            <br>
                                 <form 
                                   method="POST" 
                                   action="https://script.google.com/macros/s/AKfycbwvwwFbD-eLSt5Ggmu_mt7MI0otUhXyengIEj8j9WOvH1YzClEggBoMUC4939juUz8o/exec"
@@ -162,19 +152,32 @@
                                 >   
 
                                   <div class="row">
-                                    <div class="col">
-                                      <input name="Name" type="text" class="form-control" placeholder="Name" required>
+                                    <h3 class="card-body mb-0" style="margin-left: 27px;">Nama Pelajar</h3>
+
+                                    <div class="mb-4 card-body" style="margin-left: 27px; margin-right: 27px;">
+                                      <input name="Nama" type="text" class="form-control" placeholder="Nama" required>
                                     </div>
-                                    <div class="col">
-                                      <input name="Score" type="text" class="form-control" placeholder="Score" required>
+                                        <h1 style="text-align: center;">Mata Pelajaran</h1>
+
+                                    <div class="row card-body">
+                                        <div class="col" style="margin-left: 27px;">
+                                          <h3>Tilawah</h3>
+                                          <input name="MarkahTilawah" type="text" class="form-control" placeholder="Markah">
+                                        </div>
+
+                                        <div class="col">
+                                          <h3>Hafazan</h3>
+                                          <input name="MarkahHafazan" type="text" class="form-control" placeholder="Markah">
+                                        </div>
                                     </div>
                                   </div>
                                   <br>
-                                  <button type="submit">Send</button>
+                                  <button type="submit" class="btn-primary mb-4" style="border-radius: 8px; margin-left: 27px; padding: 15px;">Hantar</button>
                                 </form>
                         </div>
                         <div></div>
-                        <div class="card mb-4"><div class="card-body">When scrolling, the navigation stays at the top of the page. This is the end of the static navigation demo.</div>
+                        <div class="card mb-4">
+                            <h1 class="card-body" style="text-align: center;">Paparan Markah</h1>             
                         <div>
                           <br>
                         <table class="output"></table>
